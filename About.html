@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nakki</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css?ver=1.03">
+    <link rel="icon" href="空.png">
+    <link rel="apple-touch-icon" href="空四角.jpg">
+  </head>
+  <body>
+    <section class="hero is-primary is-fullheight">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://x.gd/EgX2z">
+                Nakki
+              </a>
+              <span class="navbar-burger" data-target="AB">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="AB" class="navbar-menu" >
+              <div class="navbar-end">
+                <a class="navbar-item is-active" href="https://x.gd/EgX2z">Home</a>
+                <a class="navbar-item" href="https://x.gd/KPaZe">About</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">
+            Nakki
+          </p>
+          <p><big>15さい✌🏻</big></p>
+            <p><big>良かったらSNSフォローしてね！！☺</big></p>
+          </div>
+        </div>
+    </section>
+  </body>
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    }
+
+  });
+</script>
